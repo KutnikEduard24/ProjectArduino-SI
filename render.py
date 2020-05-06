@@ -18,7 +18,7 @@ def form():
         for i in data:
             return render_template('index.html', variable=data[-1])
 
-
 if __name__ == "__main__":
     app.run()
 
+#USER AUTH
