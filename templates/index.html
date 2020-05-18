@@ -3,22 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>Arduino Project</title>
+
+
     <style>
-        body{
-            background: antiquewhite;
+        body {
+            background: black; /* fallback for old browsers */
+
+
         }
-h1 {color:red;
-text-align: center;}
-h2 {color:blue;
-   text-align: center;}
-</style>
+
+
+        h1 {
+            color: red;
+            text-align: center;
+
+        }
+
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+
+        .jumbotron {
+
+            background-repeat: no-repeat;
+            align-items: center;
+            display: flex;
+            width: 90%;
+            margin: auto;
+            border:2px solid white;
+
+        }
+
+        .opacity {
+            background: rgba(255, 255, 255, 0.5);
+            border-style: none;
+        }
+
+        .form-area {
+
+            top: 20%;
+            transform: translate(-15%, -15%);
+            width: 300px;
+            height: 250px;
+            box-sizing: border-box;
+            background: rgba(0, 0, 0, 0.3);
+            margin-left: 45%;
+            margin-top: 12%;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        .formHeader {
+            text-align: center;
+            color: red;
+        }
+
+        span {
+            font-size: 80px;
+
+            color: white;
+        }
+    </style>
+
+
 </head>
+
+
 <body>
 <h1> - Arduino - </h1>
-<h2> Number of cars in the parking place: {{ variable }}<br></h2>
-<script> setTimeout(function(){
-   window.location.reload(1);
-}, 5000);
+
+<div class="jumbotron w-80">
+    <div class="form-area position">
+        <h1>Number of cars in the parking place: </h1>
+        <span>{{variable}}/6</span>
+
+    </div>
+</div>
+
+<script> setTimeout(function () {
+    window.location.reload(1);
+}, 3000);
 </script>
 </body>
 </html>
